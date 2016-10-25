@@ -1,0 +1,76 @@
+[review "https://android.intel.com"]
+	username = mickaelm
+[review "https://github.intel.com"]
+    username = mickaelm
+[review "https://github.com"]
+    username = mickaelmallet31
+[color]
+	ui = auto
+[user]
+	name = Mickael MALLET
+	email = mickael.mallet@intel.com
+[alias]
+	co = checkout
+	lg = log
+	st = status
+	br = branch
+    loo = log --pretty=oneline --abbrev-commit
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit HEAD...HEAD~20
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[core]
+	editor = vi
+[merge]
+	tool = kdiff3
+[diff]
+    tool = meld
+[url "ssh://github.intel.com/"]
+    insteadof=ssh://github.intel.com/
+[url "https://mickaelm@github.intel.com/"]
+    insteadof=https://github.intel.com/
+[url "ssh://github.com/"]
+    insteadof=ssh://github.com/
+[url "https://mickaelmallet31@github.com/"]
+    insteadof=https://github.com/
+
+#[url "ssh://android-mirror-tl-lab.devtools.intel.com/"]
+#[url "ssh://android-mirror-nc.devtools.intel.com/"]
+#[url "ssh://android.intel.com/"]
+[url "git://android-mirror-tl-lab.devtools.intel.com/"]
+#[url "git://tlsgerrit003.tl.intel.com/"]
+#[url "ssh://android-mirror-bj.devtools.intel.com:29418/"]
+#[url "ssh://android-dev.devtools.intel.com/"]
+#[url "ssh://android-mirror-tl.devtools.intel.com/"]
+#[url "ssh://android-mirror-ba.devtools.intel.com/"]
+#[url "ssh://android-mirror-fm.devtools.intel.com/"]
+#[url "ssh://android-mirror-or.devtools.intel.com/"]
+#[url "ssh://android-mirror-sn.devtools.intel.com/"]
+#[url "git://android-cactus-test-tl.devtools.intel.com/"]
+  insteadOf=ssh://jfumg-gcrmirror.jf.intel.com/
+  insteadOf=git://jfumg-gcrmirror.jf.intel.com/
+  insteadOf=git://android.intel.com/
+  insteadOf=ssh://android.intel.com:29418/
+  insteadOf=ssh://android.intel.com/
+  insteadOf=ssh://android-mirror.devtools.intel.com/
+  insteadOf=ssh://android-mirror.devtools.intel.com:29418/
+  insteadOf=git://android-mirror.devtools.intel.com/
+  insteadOf=ssh://android-cactus-test.devtools.intel.com/
+  insteadOf=ssh://android-cactus-test.devtools.intel.com:29418/
+
+[url "ssh://android.intel.com:29418/"]
+#[url "ssh://gerritslave.tl.intel.com:29418/"]
+#[url "ssh://android-cactus-test.devtools.intel.com:29418/"]
+  pushInsteadOf=ssh://android.intel.com/
+  pushInsteadOf=git://android.intel.com/
+  pushInsteadOf=git://android-mirror-tl-lab.devtools.intel.com/
+  pushInsteadOf=git://android-cactus-test-tl.devtools.intel.com/
+  pushInsteadOf=ssh://android-cactus-test-tl.devtools.intel.com/
+  pushInsteadOf=ssh://android-cactus-test-tl.devtools.intel.com:29418/
+  pushInsteadOf=ssh://android.intel.com:29418/
+  pushInsteadOf=ssh://jfumg-gcrmirror.jf.intel.com/
+  pushInsteadOf=ssh://jfumg-gcrmirror.jf.intel.com:29418/
+  pushInsteadOf=ssh://android-mirror.devtools.intel.com/
+  pushInsteadOf=ssh://android-mirror.devtools.intel.com:29418/
+  pushInsteadOf=git://android-mirror.devtools.intel.com/
+
+[http]
+	proxy = http://proxy.ir.intel.com:911
