@@ -1,7 +1,7 @@
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-export GREP_OPTIONS='--color=auto'
+#export GREP_OPTIONS='--color=auto'
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export JAVA_1_6_HOME=/usr/java/jdk1.6.0_45
@@ -88,10 +88,16 @@ unset safe_term match_lhs
 
 export PATH=$JAVA_HOME/bin:/usr/share/ant/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$HOME/bin/:.
 #export CDPATH=/data/mickaelm/buildbot
-export http_proxy=http://proxy.ir.intel.com:911
-export https_proxy=http://proxy.ir.intel.com:911
-export no_proxy='localhost,.intel.com, 127.0.0.1'
-export GIT_PROXY_COMMAND=/usr/local/bin/git-proxy
+
+#
+# INTEL CHANGES
+#
+#export http_proxy=http://proxy.ir.intel.com:911
+#export https_proxy=http://proxy.ir.intel.com:911
+#export no_proxy='localhost,.intel.com, 127.0.0.1'
+#export GIT_PROXY_COMMAND=/usr/local/bin/git-proxy
+#cd /data/mickaelm/buildbot/yamls/android/
+
 export EDITOR=vim
 export NO_CODE_CHECK=1
 export FLEETCTL_ENDPOINT=http://etcd-discovery.intel.com:2379
@@ -106,6 +112,4 @@ function nse { sudo nsenter -p -u -m -i -n -t $(docker inspect -f '{{ .State.Pid
 
 # External function
 . ~/bin/myprog.sh
-
-cd /data/mickaelm/buildbot/yamls/android/
 

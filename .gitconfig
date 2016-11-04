@@ -72,7 +72,5 @@
   pushInsteadOf=ssh://android-mirror.devtools.intel.com:29418/
   pushInsteadOf=git://android-mirror.devtools.intel.com/
 
-[http]
-	proxy = http://proxy.ir.intel.com:911
 [credential]
 	helper = cache --timeout=3600
